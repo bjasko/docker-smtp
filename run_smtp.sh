@@ -47,7 +47,6 @@ docker rm -f $S_HOST.$S_DOMAIN
      
 docker run -d \
      -v $VOLUME_BASE/$S_HOST.$S_DOMAIN/spool:/var/spool/postfix $msmtp_vol \
-     -v /tmp/syslogdev/log:/dev/log \
      --name $S_HOST.$S_DOMAIN \
      --hostname $S_HOST.$S_DOMAIN \
      --dns $S_DNS_HOST_IP \

@@ -57,4 +57,5 @@ done
 postmap /etc/postfix/transport
 
 chown postfix:postfix /var/spool/postfix
+touch /var/log/mail.log
 postfix reload
